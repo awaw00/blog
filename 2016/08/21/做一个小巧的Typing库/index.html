@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript,Typing," />
 
 
 
@@ -84,15 +84,40 @@
 
 
 
-<meta name="description" content="用JavaScript征服世界">
-<meta property="og:type" content="website">
-<meta property="og:title" content="一韬的博客">
-<meta property="og:url" content="http://blog.allstack.win/index.html">
+<meta name="description" content="看到了一个站点：Anyway.FM，发现其顶部的打字动画非常有意思，寻思着怎样实现一个 Typing 库。
+Typing 库的构思定位Typing 是用于模拟打字动作的一个类库
+功能打字一般是这样一个过程：输入文本 - 停顿 - 退格（删除） - 继续输入 。。。那么 Typing 库应该包含如下功能：
+
+将一段文本的内容以字符为单位逐一显示出来
+可以模拟打字光标
+可以退格
+可以控制打字的速度
+可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个小巧的Typing库">
+<meta property="og:url" content="http://blog.allstack.win/2016/08/21/做一个小巧的Typing库/index.html">
 <meta property="og:site_name" content="一韬的博客">
-<meta property="og:description" content="用JavaScript征服世界">
+<meta property="og:description" content="看到了一个站点：Anyway.FM，发现其顶部的打字动画非常有意思，寻思着怎样实现一个 Typing 库。
+Typing 库的构思定位Typing 是用于模拟打字动作的一个类库
+功能打字一般是这样一个过程：输入文本 - 停顿 - 退格（删除） - 继续输入 。。。那么 Typing 库应该包含如下功能：
+
+将一段文本的内容以字符为单位逐一显示出来
+可以模拟打字光标
+可以退格
+可以控制打字的速度
+可">
+<meta property="og:updated_time" content="2016-08-21T04:31:43.177Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一韬的博客">
-<meta name="twitter:description" content="用JavaScript征服世界">
+<meta name="twitter:title" content="一个小巧的Typing库">
+<meta name="twitter:description" content="看到了一个站点：Anyway.FM，发现其顶部的打字动画非常有意思，寻思着怎样实现一个 Typing 库。
+Typing 库的构思定位Typing 是用于模拟打字动作的一个类库
+功能打字一般是这样一个过程：输入文本 - 停顿 - 退格（删除） - 继续输入 。。。那么 Typing 库应该包含如下功能：
+
+将一段文本的内容以字符为单位逐一显示出来
+可以模拟打字光标
+可以退格
+可以控制打字的速度
+可">
 
 
 
@@ -113,9 +138,9 @@
 
 
 
-  <link rel="canonical" href="http://blog.allstack.win/"/>
+  <link rel="canonical" href="http://blog.allstack.win/2016/08/21/做一个小巧的Typing库/"/>
 
-  <title> 一韬的博客 </title>
+  <title> 一个小巧的Typing库 | 一韬的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -145,9 +170,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +270,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -269,10 +292,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/08/21/做一个小巧的Typing库/" itemprop="url">
-                  一个小巧的Typing库
-                </a>
+                一个小巧的Typing库
               
             
           </h1>
@@ -319,9 +339,7 @@
       
 
       
-        
-          
-            <p>看到了一个站点：<a href="http://anyway.fm/" target="_blank" rel="external">Anyway.FM</a>，发现其顶部的打字动画非常有意思，寻思着怎样实现一个 Typing 库。</p>
+        <p>看到了一个站点：<a href="http://anyway.fm/" target="_blank" rel="external">Anyway.FM</a>，发现其顶部的打字动画非常有意思，寻思着怎样实现一个 Typing 库。</p>
 <h1 id="Typing-库的构思"><a href="#Typing-库的构思" class="headerlink" title="Typing 库的构思"></a>Typing 库的构思</h1><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p>Typing 是用于模拟打字动作的一个类库</p>
 <h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>打字一般是这样一个过程：输入文本 - 停顿 - 退格（删除） - 继续输入 。。。<br>那么 Typing 库应该包含如下功能：</p>
 <ul>
@@ -342,43 +360,88 @@
 <iframe src="//codepen.io/awaw00/embed/EyJOmB/?height=265&theme-id=dark&default-tab=js,result&embed-version=2" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 <p>大功告成！！！</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/Typing/" rel="tag">#Typing</a>
+          
+        </div>
       
 
       
+
       
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/21/做一个小巧的Typing库/"
+           data-title="一个小巧的Typing库" data-url="http://blog.allstack.win/2016/08/21/做一个小巧的Typing库/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -398,8 +461,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://awaw00.vicp.io/avt.jpg"
@@ -442,6 +514,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Typing-库的构思"><span class="nav-number">1.</span> <span class="nav-text">Typing 库的构思</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定位"><span class="nav-number">1.1.</span> <span class="nav-text">定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能"><span class="nav-number">1.2.</span> <span class="nav-text">功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Typing-库的实现"><span class="nav-number">2.</span> <span class="nav-text">Typing 库的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#尝试"><span class="nav-number">2.1.</span> <span class="nav-text">尝试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">2.2.</span> <span class="nav-text">设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#具体实现"><span class="nav-number">2.3.</span> <span class="nav-text">具体实现</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -545,6 +628,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
